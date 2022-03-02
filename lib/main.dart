@@ -1,3 +1,4 @@
+import 'package:first_flutter_app/parsing_json/json_parsing.dart';
 import 'package:first_flutter_app/ui/QuizApp.dart';
 import 'package:first_flutter_app/ui/movie_ui/MovieListView.dart';
 import 'package:flutter/material.dart';
@@ -29,5 +30,6 @@ TextTheme _appTextTheme(TextTheme base) {
 }
 
 void main() {
-  runApp(MaterialApp(theme: _appTheme, home: const QuizApp()));
+  // runApp(MaterialApp(theme: _appTheme, home: const QuizApp()));
+  runApp(const MaterialApp(home: JsonParsingSimple()));
 }
