@@ -1,3 +1,5 @@
+import 'package:first_flutter_app/flutter_maps/quakes_map_app/quakes_app.dart';
+import 'package:first_flutter_app/flutter_maps/simple_google_map/show_map.dart';
 import 'package:first_flutter_app/parsing_json/json_parsing.dart';
 import 'package:first_flutter_app/ui/QuizApp.dart';
 import 'package:first_flutter_app/ui/movie_ui/MovieListView.dart';
@@ -29,5 +31,5 @@ TextTheme _appTextTheme(TextTheme base) {
 
 void main() {
   // runApp(MaterialApp(theme: _appTheme, home: const QuizApp()));
-  runApp(const MaterialApp(home: WeatherForecast()));
+  runApp(const MaterialApp(home: QuakesApp()));
 }

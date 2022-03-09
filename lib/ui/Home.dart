@@ -54,11 +54,11 @@ class ScaffoldExample extends StatelessWidget {
         bottomNavigationBar: BottomNavigationBar(
           items: const [
             BottomNavigationBarItem(
-                icon: Icon(Icons.account_circle), title: Text("First")),
+                icon: Icon(Icons.account_circle), label: "First"),
             BottomNavigationBarItem(
-                icon: Icon(Icons.ac_unit), title: Text("Second")),
+                icon: Icon(Icons.ac_unit), label: "Second"),
             BottomNavigationBarItem(
-                icon: Icon(Icons.access_alarm), title: Text("Third"))
+                icon: Icon(Icons.access_alarm), label: "Third")
           ],
           onTap: (int index) => debugPrint("Tapped $index"),
         ),
