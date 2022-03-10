@@ -1,3 +1,5 @@
+import 'package:firebase_core/firebase_core.dart';
+import 'package:first_flutter_app/board_firestore/board_app.dart';
 import 'package:first_flutter_app/flutter_maps/quakes_map_app/quakes_app.dart';
 import 'package:first_flutter_app/flutter_maps/simple_google_map/show_map.dart';
 import 'package:first_flutter_app/parsing_json/json_parsing.dart';
@@ -29,7 +31,8 @@ TextTheme _appTextTheme(TextTheme base) {
       button: base.button?.copyWith(letterSpacing: 3.0, backgroundColor: Colors.red));
 }
 
-void main() {
-  // runApp(MaterialApp(theme: _appTheme, home: const QuizApp()));
-  runApp(const MaterialApp(home: QuakesApp()));
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(const MaterialApp(home: BoardApp()));
 }
